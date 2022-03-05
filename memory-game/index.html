@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="menu">
+      <div class="menu_block">
+        <h2 class="menu_block_tittle">Menu</h2>
+        <button class="menu_block_new_game">New game</button>
+        <button class="menu_block_score">Score</button>
+        <a class="menu_block_github" href="https://github.com/jocker-py"></a>
+      </div>
+
+      <div class="burger_menu">
+        <span class="burger_line"></span>
+        <span class="burger_line"></span>
+        <span class="burger_line"></span>
+      </div>
+    </div>
+
+    <div class="records">
+      <h2 class="records_tittle">Records</h2>
+      <table class="records_table" id="records_table">
+        <tbody class="tbody">
+          <tr class="first" id="first">
+            <th>Score</th>
+            <th>Name</th>
+          </tr>
+        </tbody>
+        
+      </table>
+      <button class="records_table_btn">Exit</button>
+    </div>
+
+    <div class="game_title">
+      <h1 class="table_score_title">Memory Game</h1>
+      <ul class="table_score">
+        <li class="table_score_value">
+          Score:
+          <span class="score"></span>
+          <img class="coin" src="./assets/svg/coin.png" />
+        </li>
+        <li class="table_score_lives"></li>
+      </ul>
+    </div>
+    <section class="section"></section>
+
+    <footer class="footer">
+      <div class="footer_links">
+        <a href="https://github.com/jocker-py" class="footer_links_item"
+          ><img
+            src="./assets/svg/github.svg"
+            alt="github"
+            class="footer_data_link"
+        /></a>
+        <a href="https://t.me/buladzislau" class="footer_links_item"
+          ><img
+            src="./assets/svg/telegram.svg"
+            alt="telegram"
+            class="footer_data_link"
+        /></a>
+      </div>
+
+      <div class="year">2022</div>
+
+      <div class="footer_school">
+        <a href="https://rs.school/js-stage0/" class="footer_school_item"
+          ><img
+            src="./assets/svg/rs_school_js.svg"
+            alt="rs_school_js"
+            class="footer_school_item"
+        /></a>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
