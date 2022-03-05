@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+    <link rel="icon" href="./assets/img/favicon.ico" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container" id="header-container">
+        <div class="header-lane">
+          <a href="https://www.instagram.com/beljaev.v/" class="logotype">
+            <img
+              src="./assets/svg/dark_theme/logo.svg"
+              class="logo"
+              alt="logo"
+            />
+          </a>
+
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="#skills" class="nav-link" data-i18="skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a href="#portfolio" class="nav-link" data-i18="portfolio"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#video" class="nav-link" data-i18="video">Video</a>
+              </li>
+              <li class="nav-item">
+                <a href="#price" class="nav-link" data-i18="price">Price</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contacts" class="nav-link" data-i18="contacts"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+            <div class="header-nav-close">
+              <span class="close-line"></span>
+              <span class="close-line"></span>
+            </div>
+          </nav>
+          <div class="language">
+            <span class="en">EN</span> / <span class="ru">RU</span>
+          </div>
+          <button class="change-style"></button>
+          <div class="header-burger burger">
+            <span class="burger-line burger-line-first"></span>
+            <span class="burger-line burger-line-second"></span>
+            <span class="burger-line burger-line-third"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <section class="hero" id="hero">
+          <div class="hero-text">
+            <h1 class="hero-name" data-i18="hero-title">Alexa Rise</h1>
+            <p class="summary" data-i18="hero-text">
+              Save sincere emotions, romantic feelings and happy moments of life
+              together with professional photographer Alexa Rise
+            </p>
+            <button class="button" data-i18="hire">Hire me</button>
+          </div>
+        </section>
+
+        <section class="skills" id="skills">
+          <div class="decorator">
+            <h2 class="section-title">
+              <span class="box" data-i18="skills">Skills</span>
+            </h2>
+            <div class="skills-items">
+              <div class="skill-item">
+                <p class="skill-item-first" data-i18="skill-title-1">
+                  Digital photography
+                </p>
+                <p class="skill-item-second" data-i18="skill-text-1">
+                  High-quality photos in the studio and on the nature
+                </p>
+              </div>
+
+              <div class="skill-item">
+                <p class="skill-item-first" data-i18="skill-title-2">
+                  Video shooting
+                </p>
+                <p class="skill-item-second" data-i18="skill-text-2">
+                  Capture your moments so that they always stay with you
+                </p>
+              </div>
+
+              <div class="skill-item">
+                <p class="skill-item-first" data-i18="skill-title-3">Retouch</p>
+                <p class="skill-item-second" data-i18="skill-text-3">
+                  I strive to make photography surpass reality
+                </p>
+              </div>
+
+              <div class="skill-item">
+                <p class="skill-item-first" data-i18="skill-title-4">Audio</p>
+                <p class="skill-item-second" data-i18="skill-text-4">
+                  Professional sounds recording for video, advertising,
+                  portfolio
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="portfolio" id="portfolio">
+          <div class="decorator">
+            <h2 class="section-title">
+              <span class="box" data-i18="portfolio">Portfolio</span>
+            </h2>
+          </div>
+
+          <div class="buttons">
+            <button class="dark-button" data-i18="winter">Winter</button>
+            <button class="dark-button" data-i18="spring">Spring</button>
+            <button class="dark-button" data-i18="summer">Summer</button>
+            <button class="dark-button" data-i18="autumn">Autumn</button>
+          </div>
+
+          <div class="images">
+            <img class="photos" src="assets/img/winter/1.jpg" alt="img_1" />
+            <img class="photos" src="assets/img/winter/2.jpg" alt="img_2" />
+            <img class="photos" src="assets/img/winter/3.jpg" alt="img_3" />
+            <img class="photos" src="assets/img/winter/4.jpg" alt="img_4" />
+            <img class="photos" src="assets/img/winter/5.jpg" alt="img_5" />
+            <img class="photos" src="assets/img/winter/6.jpg" alt="img_6" />
+          </div>
+        </section>
+
+        <section class="video" id="video">
+          <div class="decorator">
+            <h2 class="section-title">
+              <span class="box" data-i18="video">Video</span>
+            </h2>
+
+            <div class="viewer" id="viewer">
+              <div class="poster"></div>
+
+              <div class="video-container">
+                <div class="video-item">
+                  <video
+                    class="video-player"
+                    src="./assets/video/video.mp4"
+                    type="video/mp4"
+                  ></video>
+                </div>
+                <button class="viewer-btn"></button>
+              </div>
+
+              <div class="progress-block">
+                <button class="play-btn"></button>
+                <input
+                  type="range"
+                  class="progress-bar"
+                  name="progress-bar"
+                  min="0"
+                  max="100"
+                  step="0.1"
+                  value="0"
+                />
+                <button class="volume"></button>
+                <input
+                  type="range"
+                  class="volume-bar"
+                  name="volume-bar"
+                  min="0"
+                  max="100"
+                  step="1"
+                  value="40"
+                />
+
+                <button class="fullscreen"></button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="price" id="price">
+          <div class="decorator">
+            <h2 class="section-title">
+              <span class="box" data-i18="price">Price</span>
+            </h2>
+
+            <div class="price-container">
+              <div class="price-item">
+                <p class="price-title">Standard</p>
+                <p class="cost">500 $</p>
+                <div class="description">
+                  <span data-i18="price-description-1-span-1"
+                    >One location</span
+                  >
+                  <span data-i18="price-description-1-span-2"
+                    >120 photos in color</span
+                  >
+                  <span data-i18="price-description-1-span-3"
+                    >12 photos in retouch</span
+                  >
+                  <span data-i18="price-description-1-span-4"
+                    >Readiness 2-3 weeks</span
+                  >
+                  <span data-i18="price-description-1-span-5"
+                    >Make up, visage</span
+                  >
+                </div>
+                <button class="price-button" data-i18="order">
+                  Order shooting
+                </button>
+              </div>
+              <div class="price-item">
+                <p class="price-title">Premium</p>
+                <p class="cost">700 $</p>
+                <div class="description">
+                  <span data-i18="price-description-2-span-1"
+                    >One or two locations</span
+                  >
+                  <span data-i18="price-description-2-span-2"
+                    >200 photos in color</span
+                  >
+                  <span data-i18="price-description-2-span-3"
+                    >20 photos in retouch</span
+                  >
+                  <span data-i18="price-description-2-span-4"
+                    >Readiness 1-2 weeks</span
+                  >
+                  <span data-i18="price-description-2-span-5"
+                    >Make up, visage</span
+                  >
+                </div>
+                <button class="price-button" data-i18="order">
+                  Order shooting
+                </button>
+              </div>
+              <div class="price-item">
+                <p class="price-title">Gold</p>
+                <p class="cost">1000 $</p>
+                <div class="description">
+                  <span data-i18="price-description-3-span-1"
+                    >Three locations or more</span
+                  >
+                  <span data-i18="price-description-3-span-2"
+                    >300 photos in color</span
+                  >
+                  <span data-i18="price-description-3-span-3"
+                    >50 photos in retouch</span
+                  >
+                  <span data-i18="price-description-3-span-4"
+                    >Readiness 1 weeks</span
+                  >
+                  <span data-i18="price-description-3-span-5"
+                    >Make up, visage, hairstyle</span
+                  >
+                </div>
+                <button class="price-button" data-i18="order">
+                  Order shooting
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="contacts" id="contacts">
+          <div class="decorator_contacts">
+            <div class="contacts-container">
+              <h2 class="section-title" data-i18="contact-me">Contact me</h2>
+              <input
+                type="email"
+                class="text"
+                data-i18="e-mail"
+                placeholder="E-mail"
+              />
+              <input
+                type="tel"
+                class="text"
+                data-i18="phone"
+                placeholder="Phone"
+              />
+              <textarea
+                class="textarea"
+                name="message"
+                cols="30"
+                rows="10"
+                data-i18="message"
+                placeholder="Message"
+              ></textarea>
+              <button class="button" data-i18="send-message">
+                Send message
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-data">
+          <span class="space">©</span>
+          <span class="space">2022</span>
+          <a href="https://github.com/jocker-py" class="footer-link">github</a>
+        </div>
+        <div class="school">
+          <a href="https://rs.school/js-stage0/" class="footer-link"
+            >Rolling Scopes School</a
+          >
+        </div>
+
+        <ul class="social-list">
+          <li>
+            <a
+              href="https://www.instagram.com/beljaev.v/"
+              class="social-list-item"
+            >
+              <img
+                src="./assets/svg/dark_theme/inst.svg"
+                class="inst"
+                alt="instagram"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/profile.php?id=100002215970732"
+              class="social-list-item"
+            >
+              <img
+                src="./assets/svg/dark_theme/fb.svg"
+                class="fb"
+                alt="facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/?lang=ru" class="social-list-item">
+              <img
+                src="./assets/svg/dark_theme/tw.svg"
+                class="tw"
+                alt="twitter"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.pinterest.com/jocker4463/_saved/"
+              class="social-list-item"
+            >
+              <img
+                src="./assets/svg/dark_theme/pint.svg"
+                class="pint"
+                alt="pinterest"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
