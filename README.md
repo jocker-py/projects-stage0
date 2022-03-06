@@ -1,5 +1,5 @@
 # projects-stage0
 
-* [Portfolio](https://jocker-py.github.io/projects-stage0/tree/gh-pages/portfolio)
-* [Memory-game](https://jocker-py.github.io/projects-stage0/tree/gh-pages/memory-game)
-* [Image-gallery](https://jocker-py.github.io/projects-stage0/tree/gh-pages/image-galery)
+* [Portfolio](https://github.com/jocker-py/projects-stage0/tree/gh-pages/portfolio)
+* [Image-Gallery](https://github.com/jocker-py/projects-stage0/tree/gh-pages/image-galery)
+* [Memory-Game](https://github.com/jocker-py/projects-stage0/tree/gh-pages/memory-game)
